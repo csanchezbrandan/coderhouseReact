@@ -1,0 +1,10 @@
+.Footer-container{
+    background: white;
+    margin-top: 10rem;
+    min-height: 20vh;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}

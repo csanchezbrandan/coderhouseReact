@@ -1,0 +1,26 @@
+.slider-Home-Container{
+    padding: 1rem;
+    color: rgb(104, 104, 104);
+}
+.slider{
+    border-radius: 5px;
+}
+.slider div {
+    display: flex;
+    padding: 0.1rem;
+}
+.box-slider-home {
+    background-color: #8a8989;
+    border-radius: 20px;
+    max-width: 200px;
+}
+.box-slider-home img {
+    max-width: 100%;
+    padding: 0.1rem ;
+    border-radius: 20px;
+}
+
+.box-slider-home:hover {
+    transform: translateY(5px);
+}
+
