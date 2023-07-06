@@ -31,8 +31,6 @@ Install dependencies
 
 ```bash
   npm install
-  npm install react-icons
-  npm install react-router-dom
   npm install react-spinners
   npm install react-toastify
 ```
