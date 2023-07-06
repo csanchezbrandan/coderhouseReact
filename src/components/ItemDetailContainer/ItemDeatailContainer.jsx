@@ -34,7 +34,9 @@ function ItemDeatailContainer() {
     
     <Spiner/>
   </div>
-  
+
+
+  //<p>{detail.id}</p>
 
 ):(
     <div className="detail-container container ">
@@ -46,7 +48,6 @@ function ItemDeatailContainer() {
           <div className="row">
             <h2>{detail.title}</h2>
             <p>{detail.category}</p>
-            <p>{detail.genero}</p>
             <span className="price">$ {detail.price}</span>
             <span className="stock">{`Stock: ${ detail.stock}`}</span>
                       

@@ -46,7 +46,7 @@ const Item = ({ Info_for_item }) => {
               {Info_for_item.stock <= 2 && (
                 <h4
                   style={{
-                    color: "white",
+                    color: "#E81063",
                     fontWeight: "700",
                     paddingTop: "320px",
                   }}

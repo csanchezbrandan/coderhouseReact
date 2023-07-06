@@ -37,7 +37,7 @@ function App() {
           <Routes>
           <Route path="/" exact element={<HomePage />} />
             <Route
-              path="/id/:ItemConsole"
+              path="/category/:ItemCategory"
               element={<ItemListContainer />}
             />
             <Route path="/item/:itemid" element={<ItemDeatailContainer />} />

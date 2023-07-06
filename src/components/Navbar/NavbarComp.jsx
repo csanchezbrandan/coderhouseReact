@@ -6,7 +6,7 @@ import React, { useState , useContext } from "react";
 import brand from "../../assets/img/brand/brand.png";
 import CartWidget from "./CartWidget ";
 import "./NavStyles.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FiAlignJustify } from "react-icons/fi";
 import { cartContext } from "../../storage/cartContext";
 
@@ -44,46 +44,46 @@ function NavbarComp() {
               title="Hombre"
               id="collasible-nav-dropdown"
             >
-              <Link to="/Category/indumentaria" className="drop-item">
+              <NavLink to="/Category/Indumentaria" className="drop-item">
                 Indumentaria
-              </Link>
+              </NavLink>
 
-              <Link to="/Category/calzado" className="drop-item">
+              <NavLink to="/Category/Calzado" className="drop-item">
                 Calzado
-              </Link>
+              </NavLink>
 
-              <Link to="/Category/accesorio" className="drop-item">
+              <NavLink to="/Category/Accesorio" className="drop-item">
                 Accesorios
-              </Link>
+              </NavLink>
             </NavDropdown>
             <NavDropdown
               className="drop-Container"
               title="Mujer"
               id="collasible-nav-dropdown"
             >
-              <Link to="/Category/indumentaria" className="drop-item">
+              <NavLink to="/Category/indumentaria" className="drop-item">
                 Indumentaria
-              </Link>
+              </NavLink>
 
-              <Link to="/Category/calzado" className="drop-item">
+              <NavLink to="/Category/calzado" className="drop-item">
                 Calzado
-              </Link>
+              </NavLink>
 
-              <Link to="/Category/accesorio" className="drop-item">
+              <NavLink to="/Category/accesorio" className="drop-item">
                 Accesorios
-              </Link>
+              </NavLink>
             </NavDropdown>
 
-            <Link to="/Contact">Contacto</Link>
+            <NavLink to="/Contact">Contacto</NavLink>
           
-            <Link to={"/cart"} className="nav-ico-actions">
+            <NavLink to={"/cart"} className="nav-ico-actions">
               <CartWidget text={context.cart} />
-            </Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
-
+ 
 export default NavbarComp;

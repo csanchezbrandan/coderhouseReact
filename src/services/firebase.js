@@ -49,9 +49,9 @@ export async function getProduct(idSelected) {
 }
 
 // obtener los productos por categoria
-export async function getProductByConsole(ItemConsole){
+export async function getProductByCategory(ItemCategory){
   const productsRef = collection(dataBase, 'products');
-  const q  = query( productsRef , where( "console", "==" , ItemConsole ) )
+  const q  = query( productsRef , where( "category", "==" , ItemCategory ) )
   const snapshot = await getDocs(q)
   const products = snapshot.docs.map( (elem) =>{
     let product = elem.data();

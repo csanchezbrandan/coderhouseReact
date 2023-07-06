@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./ItemlistStyles.css";
 import { MDBContainer, MDBRow } from "mdb-react-ui-kit";
-import { getProductByConsole } from "../../services/firebase";
+import { getProductByCategory } from "../../services/firebase";
 import { CatchProducts } from "../../services/firebase";
 
 import { useParams } from "react-router-dom";
@@ -15,12 +15,12 @@ const ItemListContainer = () => {
   const [isLoading, setisLoading] = useState(true);
 
   // utilizo el useParams para poder tomar el valor de la url que necesito filtrar como categoria
-  let ItemConsole = useParams().ItemConsole;
+  let ItemCategory = useParams().ItemCategory;
   // useEffect para ejecutar la funcion que ira a buscar los productos al mockService
   useEffect(() => {
-    ItemConsole
+    ItemCategory
       ? //llamo a a funcion
-      getProductByConsole(ItemConsole)
+      getProductByCategory(ItemCategory)
           // de ser exitosa la devolucion guardo lo recibido en el useState
           .then((response) => setProduct(response))
           // de ser erronea la respuesta mostrar el error por consola
@@ -37,7 +37,7 @@ const ItemListContainer = () => {
           .finally(
             ()=>setisLoading(false)
           )
-  }, [ItemConsole]);
+  }, [ItemCategory]);
 
   return (
     <MDBContainer fluid className=" container my-5 text-center ">
