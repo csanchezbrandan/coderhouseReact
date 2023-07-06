@@ -1,4 +1,3 @@
-
 # Apacheta Outdoor React.js
 Ecommerce Desarrollado para el curso de **REACT** de *CoderHouse*.
 
