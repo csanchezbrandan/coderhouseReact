@@ -1,10 +1,10 @@
 # Apacheta Outdoor React.js
 Ecommerce Desarrollado para el curso de **REACT** de *CoderHouse*.
 
-**Esta compuesto por 5 secciones:
-* Home : muestra la totalidad de los productos disponibles, un buscador de productos, y un slider con los productos mas consutados *
- **Hombre , Mujer : ambas secciones cuantan con su sub menu (Indumentaria, Calzado y Accesorios) **
- * Contacto: la opcion no esta disponible (para mostrar la pagina de 404 not found)*
+**# Esta compuesto por 5 secciones:** 
+* Home :muestra la totalidad de los productos disponibles, un buscador de productos, y un slider con los productos mas consutados
+* Hombre , Mujer : ambas secciones cuantan con su sub menu (Indumentaria, Calzado y Accesorios) 
+* Contacto: la opcion no esta disponible (para mostrar la pagina de 404 not found)
 
 **# Cart** :
 * La seccion del **carrito renderiza 2 mensajes distintos** al usuario , dependiendo si tiene productos seleccionados o no. En caso de no tener productos nos mustra un mensaje que nos invita a redirigirnos al home mediante el evento click en un boton. Si el usuario ya añadio productos entonces nos muestra los items seleccionados y nos permite agregar mas o reducir la cantidad selecta. 
@@ -14,22 +14,24 @@ Ecommerce Desarrollado para el curso de **REACT** de *CoderHouse*.
 
 ## Correrlo de forma local 
 
-Clone the project
+Para clonar el proyecto:
 
 ```bash
   git clone https://github.com/csanchezbrandan/coderhouseReact.git
 ```
 
-Go to the project directory
+Ingresar a la carpeta
 
 ```bash
   coderhouseReact
 ```
 
-Install dependencies
+Instalar dependencias
 
 ```bash
   npm install
+  npm install react-icons
+  npm install react-router-dom
   npm install react-spinners
   npm install react-toastify
 ```
